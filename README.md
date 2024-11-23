@@ -1,86 +1,107 @@
 
-# Lisk Auto Transaction and Task Automation
+# Lisk Auto
 
-This repository contains a bot script to automate ETH wrapping transactions and Lisk task clearing. The script includes functionalities for hourly, daily, and weekly operations.
-
----
-
-## Registration
-
-To begin using this bot, register at [Lisk Portal Airdrop](https://portal.lisk.com/airdrop) using the referral code: **YUouBD**.
-
----
-
+A comprehensive automated script for managing transactions and task claims for Lisk users.
 
 ## Features
 
-- **Daily Transactions:** Wrap ETH every 24 hours for the accounts listed.
-- **Weekly Transactions:** Execute 500 random ETH wrapping transactions every 7 days.
-- **Hourly Task:** Fetch and clear tasks every hour.
+1. **Daily Transaction:** Wrap ETH automatically every 24 hours.
+2. **Hourly Task:** Automates task fetching and claiming every hour.
+3. **Weekly Transaction:** Supports wrapping ETH or sending 0 ETH to your own address, running weekly.
 
 ---
 
 ## Prerequisites
 
-1. **Node.js**: Ensure you have Node.js installed. You can download it from [Node.js Official Site](https://nodejs.org/).
-2. **Private Keys**: Prepare a `private_keys.txt` file in the project directory containing the private keys for the accounts you want to use.
-3. **Lisk RPC URL**: Update the `web3` initialization with the correct RPC URL.
+1. **Register on the Lisk Portal:**
+   - Visit [Lisk Portal Airdrop](https://portal.lisk.com/airdrop).
+   - Use invite code: `YUouBD` to register.
 
----
-
-## Setup Instructions
-
-1. **Clone the Repository**
+2. **Clone the Repository:**
    ```bash
    git clone https://github.com/ganjsmoke/lisk-auto.git
    cd lisk-auto
    ```
 
-2. **Install Dependencies**
+3. **Install Node.js:**
+   - Download and install Node.js from [Node.js Official Website](https://nodejs.org).
+
+4. **Install Dependencies:**
    ```bash
    npm install
    ```
 
-3. **Create a Private Key File**
-   - Create a file named `private_keys.txt` in the root of the project.
-   - Format the file as follows (one private key per line):
-     ```
-     0xYOUR_PRIVATE_KEY_1
-     0xYOUR_PRIVATE_KEY_2
-     0xYOUR_PRIVATE_KEY_3
-     ```
-
-
-4. **Run the Script**
-   - Start the bot using:
-     ```bash
-     node index.js
-     ```
-
-5. **Use Screen for Persistent Execution**
-   - It's recommended to use the `screen` command to ensure each menu can run independently without interruption:
-     ```bash
-     screen -S daily_task
-     node index.js
-     ```
-     Repeat this for each menu option (Daily, Hourly, Weekly) by naming the screen sessions accordingly.
-
-6. **Choose an Operation**
-   - Daily Transaction (Option 1)
-   - Hourly Task (Option 2)
-   - Weekly Transaction (Option 3)
+5. **Create a `private_keys.txt` file:**
+   - Store your private keys in this file, one private key per line. See the format below.
 
 ---
 
+## File Formats
 
-
-## Acknowledgment
-
-- Bot created by: [Telegram - airdropwithmeh](https://t.me/airdropwithmeh)
+### private_keys.txt
+```txt
+PRIVATE_KEY_1
+PRIVATE_KEY_2
+PRIVATE_KEY_3
+...
+```
 
 ---
 
-## Notes
+## Usage
 
-- Ensure your `private_keys.txt` file is secure and not shared publicly.
-- Monitor your accounts for gas and balance sufficiency to prevent transaction failures.
+### Recommended: Use Screen for Long-Running Processes
+To ensure uninterrupted execution, run each menu option in a separate `screen` session.
+
+1. Install screen:
+   ```bash
+   sudo apt install screen
+   ```
+2. Start a screen session:
+   ```bash
+   screen -S lisk-auto
+   ```
+3. Run the script.
+
+### Run the Script
+1. Start the script:
+   ```bash
+   node index.js
+   ```
+
+2. Choose an option:
+   - `1`: Daily Transaction (Wrap ETH, runs every 24 hours).
+   - `2`: Hourly Task (Runs hourly).
+   - `3`: Weekly Transaction (Wrap ETH).
+   - `4`: Weekly Transaction (Send 0 ETH to Own Address).
+
+### Detach Screen
+Detach the screen session to keep it running in the background:
+```bash
+Ctrl + A, D
+```
+
+### Reattach Screen
+To return to the screen session:
+```bash
+screen -r lisk-auto
+```
+
+---
+
+## Important Notes
+
+- Ensure that the `private_keys.txt` file is kept secure.
+- Do not share your private keys publicly.
+- Use this script responsibly.
+
+---
+
+## Author
+
+Bot created by: [https://t.me/airdropwithmeh](https://t.me/airdropwithmeh)
+
+---
+
+## License
+This project is for educational purposes only. Use at your own discretion.
