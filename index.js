@@ -1,1 +1,407 @@
-function _0x28d1(){const _0x2aa6c9=['\x0a\x20\x20\x20\x20mutation\x20UpdateAirdropTaskStatus($input:\x20UpdateTaskStatusInputData!)\x20{\x0a\x20\x20\x20\x20\x20\x20userdrop\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20updateTaskStatus(input:\x20$input)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20success\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progress\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20isCompleted\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20completedAt\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20','123gdBlSy','13573490wMOuNA','Processing\x20daily\x20transaction:\x20Wrapping\x20','34277yqsmtR','function','40KOLxCC','trim','Finished\x20processing\x20tasks\x20for\x20address:\x20','\x0a\x20\x20\x20\x20query\x20AirdropUser($filter:\x20UserFilter!,\x20$tasksFilter:\x20QueryFilter)\x20{\x0a\x20\x20\x20\x20\x20\x20userdrop\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20user(filter:\x20$filter)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20tasks(filter:\x20$tasksFilter)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20tasks\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20id\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20description\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20progress\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20isCompleted\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20','wallet','/20:\x20Wrapping\x20','transactionHash','data','Auto\x20Tx\x20&\x20Task\x20Lisk','Error\x20sending\x200\x20ETH:\x20','Bot\x20created\x20by:\x20https://t.me/airdropwithmeh','private_keys.txt','Sending\x200\x20ETH\x20to\x20own\x20address:\x20','ether','close','7665ugOKsf',']\x20Starting\x20daily\x20transaction\x20processing...\x0a','stdin','30AHJfpv','toString','push','post','Task\x20','Choose\x20an\x20option:','add',']\x20Starting\x20weekly\x20transaction\x20processing...\x0a','9lkoWXA','1146FhlzgE','Fetching\x20and\x20claiming\x20tasks\x20for\x20address:\x20','address','8mUFdOR','utf-8','methods','Processing\x2020\x20transactions\x20for\x20address\x20linked\x20to\x20private\x20key.','green','2.\x20Hourly\x20Task\x20(Runs\x20hourly)','Successfully\x20sent\x200\x20ETH\x20to\x20own\x20address.\x20Transaction\x20Hash:\x20','Retrying...\x20Attempts\x20left:\x20','3.\x20Weekly\x20Transaction\x20(Wrap\x20ETH)','Resuming\x20daily\x20transaction\x20processing\x20after\x2024\x20hours.','Waiting\x20for\x20the\x20next\x207\x20days...','completedAt','privateKeyToAccount','response','20873320lqnxQb',']\x20Daily\x20transaction\x20processing\x20completed.\x0a','getTransactionCount','user','You\x20chose\x20Hourly\x20Task.','553144gyVhzp','toFixed','success','updateTaskStatus','5.\x20Daily\x20Bug\x20(500\x20Points,\x20runs\x20every\x2024\x20hours)','1.\x20Daily\x20Transaction\x20(Wrap\x20ETH,\x20runs\x20every\x2024\x20hours)','2637425FXIEaM','6274809tkJFBU','Waiting\x20for\x20the\x20next\x2024\x20hours...','3364956fNvjYv','toWei','web3','tasks','Successfully\x20wrapped\x20ETH.\x20Transaction\x20Hash:\x20','Transaction\x20','Invalid\x20choice.\x20Please\x20enter\x201,\x202,\x203,\x204,\x20or\x205.','readline','cyan','\x20ETH','bold','12346408hIhmTs','773719nDJkzP','Wrapping\x20ETH\x20for\x20address:\x20','You\x20chose\x20Weekly\x20Transaction\x20(Wrap\x20ETH).','\x20successfully\x20claimed!\x20Completed\x20At:\x20','createInterface',',\x20Amount:\x20','progress','padEnd','Contract','padStart','Resuming\x20daily\x20bug\x20transaction\x20processing\x20after\x2024\x20hours.','Finished\x2020\x20transactions\x20for\x20address.\x0a','error','Error\x20processing\x20tasks:','wrap','random','Error\x20fetching\x20tasks:','floor','5ymTnLV','message','15909588oMwAjI','isCompleted','axios','Resuming\x20weekly\x20transaction\x20processing\x20after\x207\x20days.','yellow','blue','Enter\x20your\x20choice\x20(1,\x202,\x203,\x204,\x20or\x205):\x20','Claiming\x20task\x20',']\x20Daily\x20bug\x20transaction\x20processing\x20completed.\x0a','2893836faQQlw','log','red','description','toLocaleTimeString','11vlDbJx','filter','42494FSTMbG','Failed\x20to\x20claim\x20task\x20','split',']\x20Weekly\x20transaction\x20processing\x20completed.\x0a','eth','send','shift','13HrGaRd','Max\x20retries\x20reached.\x20Transaction\x20failed.','readFileSync',']\x20Starting\x20daily\x20bug\x20transaction\x20processing...\x0a','length',']\x20Hourly\x20task\x20processing\x20completed.\x0a'];_0x28d1=function(){return _0x2aa6c9;};return _0x28d1();}const _0x3942dc=_0x4b35;(function(_0x27da78,_0x1ff83d){const _0x5bc374=_0x4b35,_0x435259=_0x27da78();while(!![]){try{const _0x476013=parseInt(_0x5bc374(0x1e3))/0x1+-parseInt(_0x5bc374(0x18a))/0x2*(parseInt(_0x5bc374(0x198))/0x3)+parseInt(_0x5bc374(0x183))/0x4+parseInt(_0x5bc374(0x1d4))/0x5+parseInt(_0x5bc374(0x1b8))/0x6*(parseInt(_0x5bc374(0x1ac))/0x7)+parseInt(_0x5bc374(0x1e2))/0x8*(parseInt(_0x5bc374(0x1b7))/0x9)+-parseInt(_0x5bc374(0x1c9))/0xa;if(_0x476013===_0x1ff83d)break;else _0x435259['push'](_0x435259['shift']());}catch(_0x3d37e0){_0x435259['push'](_0x435259['shift']());}}}(_0x28d1,0xc7dda));const _0x54dfff=_0xa0e7;(function(_0x47c9a0,_0x1b25e8){const _0x137c23=_0x4b35,_0x429595=_0xa0e7,_0x22974e=_0x47c9a0();while(!![]){try{const _0x2be490=parseInt(_0x429595(0xfe))/0x1*(parseInt(_0x429595(0xca))/0x2)+parseInt(_0x429595(0xeb))/0x3*(-parseInt(_0x429595(0xfb))/0x4)+-parseInt(_0x429595(0x111))/0x5*(-parseInt(_0x429595(0x110))/0x6)+parseInt(_0x429595(0xec))/0x7+parseInt(_0x429595(0xfc))/0x8*(parseInt(_0x429595(0x114))/0x9)+-parseInt(_0x429595(0xd1))/0xa*(-parseInt(_0x429595(0xee))/0xb)+-parseInt(_0x429595(0xd4))/0xc*(parseInt(_0x429595(0x125))/0xd);if(_0x2be490===_0x1b25e8)break;else _0x22974e['push'](_0x22974e['shift']());}catch(_0x562ba0){_0x22974e[_0x137c23(0x1b1)](_0x22974e[_0x137c23(0x190)]());}}}(_0x3b78,0xb9704));const fs=require('fs'),Web3=require(_0x54dfff(0x12d)),chalk=require(_0x54dfff(0x11a)),readline=require(_0x54dfff(0x102)),axios=require(_0x54dfff(0x13d)),WETH_ADDRESS=_0x54dfff(0xf8),WETH_ABI=[{'constant':![],'inputs':[],'name':_0x54dfff(0xf5),'outputs':[],'payable':!![],'stateMutability':'payable','type':_0x3942dc(0x19c)}],web3=new Web3(_0x54dfff(0x12b)),API_URL=_0x54dfff(0x115),wrapETH=async(_0x67e7fd,_0x398a1f)=>{const _0x1a2984=_0x3942dc,_0x29b88d=_0x54dfff;try{const _0x2bc2d1=web3[_0x29b88d(0x12e)][_0x29b88d(0x13b)][_0x29b88d(0xdb)](_0x67e7fd[_0x1a2984(0x19e)]());web3[_0x29b88d(0x12e)][_0x29b88d(0x13b)][_0x1a2984(0x1a1)][_0x29b88d(0x104)](_0x2bc2d1);const _0xf95227=new web3[(_0x29b88d(0x12e))][(_0x29b88d(0xc8))](WETH_ABI,WETH_ADDRESS);console[_0x29b88d(0x113)](chalk[_0x29b88d(0xd6)](_0x29b88d(0x118)+_0x2bc2d1[_0x29b88d(0xcb)]+_0x29b88d(0x122)+_0x398a1f));const _0x4df2f6=_0xf95227[_0x29b88d(0xf3)]['deposit'](),_0x56a74c=web3['utils'][_0x1a2984(0x1d8)](_0x398a1f[_0x29b88d(0x120)](),_0x29b88d(0x137)),_0x51b48d=await _0x4df2f6[_0x29b88d(0x135)]({'from':_0x2bc2d1[_0x29b88d(0xcb)],'value':_0x56a74c}),_0x31ff93=await web3[_0x29b88d(0x12e)][_0x29b88d(0xe0)](),_0x26b935=await web3[_0x29b88d(0x12e)][_0x29b88d(0xf4)](_0x2bc2d1['address']),_0x4fb13d=await _0x4df2f6[_0x1a2984(0x18f)]({'from':_0x2bc2d1[_0x29b88d(0xcb)],'to':WETH_ADDRESS,'value':_0x56a74c,'gas':_0x51b48d,'gasPrice':_0x31ff93,'nonce':_0x26b935});console[_0x29b88d(0x113)](chalk[_0x29b88d(0x10d)](_0x29b88d(0x10c)+_0x4fb13d[_0x29b88d(0x134)]));}catch(_0x359065){console[_0x29b88d(0x109)](chalk[_0x29b88d(0xe1)](_0x29b88d(0x13a),_0x359065[_0x1a2984(0x179)]));}},sendToOwnAddress=async(_0x50a5fc,_0x39a40e=0x3)=>{const _0x1a14af=_0x3942dc,_0x157fbc=_0x54dfff,_0x48dedd=web3['eth'][_0x157fbc(0x13b)]['privateKeyToAccount'](_0x50a5fc[_0x157fbc(0xc9)]());web3[_0x157fbc(0x12e)][_0x157fbc(0x13b)][_0x157fbc(0x129)][_0x157fbc(0x104)](_0x48dedd);try{console[_0x157fbc(0x113)](chalk[_0x157fbc(0xd6)](_0x1a14af(0x1a9)+_0x48dedd[_0x157fbc(0xcb)]));const _0x8f896b=await web3[_0x157fbc(0x12e)][_0x157fbc(0x135)]({'from':_0x48dedd[_0x157fbc(0xcb)],'to':_0x48dedd[_0x1a14af(0x1ba)],'value':'0'}),_0x3cbcc0=await web3[_0x157fbc(0x12e)][_0x157fbc(0xe0)](),_0x2b58bb=await web3[_0x1a14af(0x18e)][_0x157fbc(0xf4)](_0x48dedd[_0x157fbc(0xcb)]),_0xd42085=await web3[_0x157fbc(0x12e)][_0x157fbc(0x106)]({'from':_0x48dedd[_0x157fbc(0xcb)],'to':_0x48dedd[_0x157fbc(0xcb)],'value':'0','gas':_0x8f896b,'gasPrice':_0x3cbcc0,'nonce':_0x2b58bb});console[_0x157fbc(0x113)](chalk[_0x157fbc(0x10d)](_0x157fbc(0x10e)+_0xd42085[_0x157fbc(0x134)]));}catch(_0x33a21f){console['error'](chalk[_0x157fbc(0xe1)](_0x157fbc(0x105)+_0x33a21f[_0x157fbc(0x11d)])),_0x39a40e>0x0?(console[_0x1a14af(0x184)](chalk[_0x157fbc(0xf9)](_0x157fbc(0x136)+_0x39a40e)),await sendToOwnAddress(_0x50a5fc,_0x39a40e-0x1)):console[_0x1a14af(0x1ef)](chalk[_0x157fbc(0xe1)](_0x157fbc(0xe5)));}},getTaskPayload=_0x5a00e6=>({'query':_0x54dfff(0xfa),'variables':{'filter':{'address':_0x5a00e6}}}),claimTaskPayload=(_0x512267,_0x1e45b8)=>({'query':_0x3942dc(0x197),'variables':{'input':{'address':_0x512267,'taskID':_0x1e45b8}}}),fetchTasks=async _0xdcb1a2=>{const _0x266154=_0x3942dc,_0x76b398=_0x54dfff;try{const _0x4810c3=getTaskPayload(_0xdcb1a2),_0x4f0832=await axios[_0x76b398(0x107)](API_URL,_0x4810c3,{'headers':{'Content-Type':_0x76b398(0x127),'Accept':_0x76b398(0x127),'User-Agent':_0x76b398(0x11c)}}),_0x4e8ea9=_0x4f0832[_0x76b398(0xe4)]?.['data']?.[_0x76b398(0xd9)]?.[_0x266154(0x1cc)]?.[_0x76b398(0x123)]?.[_0x76b398(0x130)](_0x564363=>_0x564363[_0x76b398(0x123)])||[];return _0x4e8ea9[_0x76b398(0x11b)](_0x12354c=>!_0x12354c[_0x76b398(0xed)][_0x76b398(0x121)]);}catch(_0x21a04e){return console[_0x76b398(0x109)](chalk[_0x76b398(0xe1)](_0x76b398(0x11e),_0x21a04e[_0x76b398(0x12f)]?.[_0x76b398(0xe4)]||_0x21a04e[_0x76b398(0x11d)])),[];}},claimTask=async(_0x3486a8,_0x4fe39b,_0x6687ad)=>{const _0x3f4e1a=_0x3942dc,_0x335c19=_0x54dfff;try{console[_0x335c19(0x113)](chalk[_0x335c19(0x117)](_0x3f4e1a(0x181)+_0x4fe39b+':\x20'+_0x6687ad));const _0x33d1f4=claimTaskPayload(_0x3486a8,_0x4fe39b),_0x376a3d=await axios[_0x335c19(0x107)](API_URL,_0x33d1f4,{'headers':{'Content-Type':_0x335c19(0x127),'Accept':'application/json','User-Agent':_0x335c19(0x11c)}}),_0x4a8fac=_0x376a3d[_0x335c19(0xe4)]?.[_0x335c19(0xe4)]?.[_0x335c19(0xd9)]?.[_0x3f4e1a(0x1d1)];_0x4a8fac?.[_0x3f4e1a(0x1d0)]?console[_0x335c19(0x113)](chalk[_0x3f4e1a(0x1bf)](_0x3f4e1a(0x1b3)+_0x4fe39b+_0x335c19(0x10f)+_0x4a8fac[_0x3f4e1a(0x1e9)][_0x335c19(0xd0)])):console[_0x335c19(0x113)](chalk[_0x335c19(0xe1)](_0x335c19(0xdf)+_0x4fe39b+'.'));}catch(_0x367540){console[_0x335c19(0x109)](chalk[_0x3f4e1a(0x185)]('Error\x20claiming\x20task\x20'+_0x4fe39b+':',_0x367540[_0x3f4e1a(0x1c8)]?.[_0x335c19(0xe4)]||_0x367540[_0x335c19(0x11d)]));}},clearTasks=async _0x209ce2=>{const _0x1daea9=_0x3942dc,_0x2daca5=_0x54dfff;try{const _0x1fa219=fs[_0x2daca5(0x119)](_0x209ce2,_0x2daca5(0xf1))[_0x2daca5(0x138)]('\x0a')[_0x2daca5(0x11b)](Boolean);for(const _0x4c3256 of _0x1fa219){const _0x44271c=web3[_0x2daca5(0x12e)][_0x2daca5(0x13b)][_0x1daea9(0x1c7)](_0x4c3256[_0x1daea9(0x19e)]()),_0x14b1fd=_0x44271c[_0x2daca5(0xcb)];console[_0x2daca5(0x113)](chalk[_0x2daca5(0xd6)](_0x2daca5(0xff)+_0x14b1fd));const _0x38a54c=await fetchTasks(_0x14b1fd);for(const _0x40afac of _0x38a54c){await claimTask(_0x14b1fd,_0x40afac['id'],_0x40afac[_0x1daea9(0x186)]);}console[_0x2daca5(0x113)](chalk[_0x2daca5(0x10d)](_0x2daca5(0xef)+_0x14b1fd+'\x0a'));}}catch(_0x39de2f){console[_0x2daca5(0x109)](chalk['red'](_0x1daea9(0x1f0),_0x39de2f[_0x2daca5(0x11d)]));}},startHourlyTask=_0x37fa6b=>{const _0x360316=async()=>{const _0x3896f5=_0x4b35,_0x5315c8=_0xa0e7;console[_0x3896f5(0x184)](chalk[_0x5315c8(0xf9)]('\x0a['+new Date()[_0x5315c8(0x128)]()+_0x5315c8(0xd7))),await clearTasks(_0x37fa6b),console[_0x5315c8(0x113)](chalk[_0x5315c8(0x10d)]('\x0a['+new Date()[_0x5315c8(0x128)]()+_0x5315c8(0x124))),console[_0x5315c8(0x113)](chalk[_0x5315c8(0x117)](_0x5315c8(0x132))),setTimeout(()=>{const _0x3aff56=_0x3896f5,_0x109b2a=_0x5315c8;console[_0x3aff56(0x184)](chalk[_0x109b2a(0xf9)](_0x109b2a(0x101))),_0x360316();},0x3c*0x3c*0x3e8);};_0x360316();},startWeeklyTransaction=(_0x2ca37c,_0x45ccc3)=>{const _0xdb50f9=async()=>{const _0x49d45e=_0x4b35,_0xb28a79=_0xa0e7;console[_0x49d45e(0x184)](chalk[_0xb28a79(0xf9)]('\x0a['+new Date()['toLocaleTimeString']()+_0xb28a79(0x13c)));const _0x56b10e=fs[_0x49d45e(0x193)](_0x2ca37c,_0x49d45e(0x1bc))[_0xb28a79(0x138)]('\x0a')[_0x49d45e(0x189)](Boolean);for(const _0x53e6dc of _0x56b10e){console[_0x49d45e(0x184)](chalk[_0xb28a79(0xd6)](_0xb28a79(0x12c)));for(let _0xc5e414=0x0;_0xc5e414<0x14;_0xc5e414++){if(_0x45ccc3===_0xb28a79(0xdd)){const _0x403ed0=1e-10,_0x2110b7=1e-9,_0x541a71=(Math[_0xb28a79(0xf2)]()*(_0x2110b7-_0x403ed0)+_0x403ed0)[_0xb28a79(0xcf)](0x9);console['log'](chalk['yellow'](_0xb28a79(0xc7)+(_0xc5e414+0x1)+_0xb28a79(0x131)+_0x541a71+_0xb28a79(0xea))),await wrapETH(_0x53e6dc,_0x541a71);}else _0x45ccc3===_0x49d45e(0x18f)&&(console[_0xb28a79(0x113)](chalk[_0xb28a79(0xf9)](_0x49d45e(0x1dc)+(_0xc5e414+0x1)+_0xb28a79(0xd3))),await sendToOwnAddress(_0x53e6dc));}console[_0xb28a79(0x113)](chalk[_0xb28a79(0x10d)]('Finished\x2020\x20transactions\x20for\x20address.\x0a'));}console['log'](chalk[_0xb28a79(0x10d)]('\x0a['+new Date()[_0xb28a79(0x128)]()+_0xb28a79(0x108))),console[_0xb28a79(0x113)](chalk[_0xb28a79(0x117)](_0xb28a79(0x139))),setTimeout(()=>{const _0x18b34b=_0x49d45e,_0x50c00b=_0xb28a79;console[_0x50c00b(0x113)](chalk[_0x18b34b(0x17e)](_0x50c00b(0x12a))),_0xdb50f9();},0x7*0x18*0x3c*0x3c*0x3e8);};_0xdb50f9();},startDailyBugTransaction=_0xf85efe=>{const _0x5274c1=async()=>{const _0x13e113=_0x4b35,_0x3ff498=_0xa0e7;console[_0x3ff498(0x113)](chalk[_0x3ff498(0xf9)]('\x0a['+new Date()['toLocaleTimeString']()+_0x3ff498(0xde)));const _0x3a8c75=fs[_0x13e113(0x193)](_0xf85efe,_0x3ff498(0xf1))[_0x3ff498(0x138)]('\x0a')[_0x3ff498(0x11b)](Boolean);for(const _0xd6834d of _0x3a8c75){console[_0x3ff498(0x113)](chalk[_0x3ff498(0xd6)](_0x3ff498(0x12c)));for(let _0x53625e=0x0;_0x53625e<0x14;_0x53625e++){const _0x3241d2=1e-9,_0x395c5a=1e-8,_0x198254=(Math[_0x13e113(0x1f2)]()*(_0x395c5a-_0x3241d2)+_0x3241d2)[_0x3ff498(0xcf)](0x9);console[_0x3ff498(0x113)](chalk[_0x3ff498(0xf9)](_0x3ff498(0xc7)+(_0x53625e+0x1)+_0x13e113(0x1a2)+_0x198254+_0x3ff498(0xea))),await wrapETH(_0xd6834d,_0x198254);}console[_0x3ff498(0x113)](chalk[_0x3ff498(0x10d)](_0x3ff498(0xfd)));}console[_0x3ff498(0x113)](chalk[_0x3ff498(0x10d)]('\x0a['+new Date()[_0x3ff498(0x128)]()+_0x3ff498(0x10a))),console[_0x3ff498(0x113)](chalk[_0x3ff498(0x117)](_0x3ff498(0xd2))),setTimeout(()=>{const _0x3fdbee=_0x13e113,_0x31727b=_0x3ff498;console[_0x3fdbee(0x184)](chalk[_0x31727b(0xf9)](_0x31727b(0xcd))),_0x5274c1();},0x18*0x3c*0x3c*0x3e8);};_0x5274c1();},startDailyTransaction=_0x364a6c=>{const _0x3a6369=async()=>{const _0x14805b=_0x4b35,_0x290735=_0xa0e7;console[_0x290735(0x113)](chalk[_0x290735(0xf9)]('\x0a['+new Date()[_0x290735(0x128)]()+_0x290735(0xdc)));const _0x47252b=fs[_0x290735(0x119)](_0x364a6c,_0x290735(0xf1))[_0x14805b(0x18c)]('\x0a')[_0x14805b(0x189)](Boolean);for(const _0x2939b1 of _0x47252b){const _0x4bcef4=1e-9,_0x187203=1e-8,_0x174f55=(Math[_0x290735(0xf2)]()*(_0x187203-_0x4bcef4)+_0x4bcef4)[_0x290735(0xcf)](0x9);console[_0x290735(0x113)](chalk[_0x290735(0xf9)](_0x290735(0x103)+_0x174f55+'\x20ETH\x20for\x20private\x20key')),await wrapETH(_0x2939b1,_0x174f55);}console[_0x290735(0x113)](chalk[_0x290735(0x10d)]('\x0a['+new Date()[_0x290735(0x128)]()+_0x290735(0xe6))),console[_0x290735(0x113)](chalk[_0x290735(0x117)](_0x290735(0xd2))),setTimeout(()=>{const _0x45f98c=_0x14805b,_0x388592=_0x290735;console[_0x45f98c(0x184)](chalk[_0x388592(0xf9)](_0x388592(0x11f))),_0x3a6369();},0x18*0x3c*0x3c*0x3e8);};_0x3a6369();};function _0x3b78(){const _0x437be8=_0x3942dc,_0x3dc74b=[_0x437be8(0x1c4),_0x437be8(0x1b0),_0x437be8(0x17b),_0x437be8(0x1e8),_0x437be8(0x1da),_0x437be8(0x196),_0x437be8(0x191),_0x437be8(0x1e5),'application/json',_0x437be8(0x187),_0x437be8(0x1a1),_0x437be8(0x17d),'https://rpc.api.lisk.com',_0x437be8(0x1be),_0x437be8(0x1d9),_0x437be8(0x18e),_0x437be8(0x1c8),'flatMap',_0x437be8(0x1a2),'Waiting\x20for\x20the\x20next\x20hour...',_0x437be8(0x1cd),_0x437be8(0x1a3),'estimateGas',_0x437be8(0x1c2),_0x437be8(0x1aa),_0x437be8(0x18c),_0x437be8(0x1c5),'Error\x20wrapping\x20ETH:','accounts',_0x437be8(0x1b6),_0x437be8(0x17c),_0x437be8(0x1dc),_0x437be8(0x1eb),'trim',_0x437be8(0x19d),_0x437be8(0x1ba),'You\x20chose\x20Weekly\x20Transaction\x20(Send\x200\x20ETH\x20to\x20Own\x20Address).',_0x437be8(0x1ed),_0x437be8(0x177),_0x437be8(0x1cf),_0x437be8(0x1c6),_0x437be8(0x199),_0x437be8(0x1d6),'/20:\x20Sending\x200\x20ETH\x20to\x20own\x20address',_0x437be8(0x17a),_0x437be8(0x1e7),_0x437be8(0x17f),']\x20Starting\x20hourly\x20task\x20processing...\x0a',_0x437be8(0x1a5),'userdrop',_0x437be8(0x1e1),_0x437be8(0x1c7),_0x437be8(0x1ad),_0x437be8(0x1f1),_0x437be8(0x194),_0x437be8(0x18b),'getGasPrice','red',_0x437be8(0x1c3),'4.\x20Weekly\x20Transaction\x20(Send\x200\x20ETH\x20to\x20Own\x20Address)',_0x437be8(0x1a4),_0x437be8(0x192),_0x437be8(0x1ca),'padEnd',_0x437be8(0x1b4),_0x437be8(0x1d3),_0x437be8(0x1e0),_0x437be8(0x1af),_0x437be8(0x1d7),_0x437be8(0x1e9),_0x437be8(0x188),_0x437be8(0x19f),_0x437be8(0x1dd),_0x437be8(0x1bc),_0x437be8(0x1f2),_0x437be8(0x1bd),_0x437be8(0x1cb),'deposit',_0x437be8(0x195),_0x437be8(0x1ec),'0x4200000000000000000000000000000000000006',_0x437be8(0x17e),_0x437be8(0x1a0),_0x437be8(0x1ce),_0x437be8(0x1bb),_0x437be8(0x1ee),_0x437be8(0x19b),_0x437be8(0x1b9),_0x437be8(0x18f),'Resuming\x20task\x20processing\x20after\x201\x20hour.',_0x437be8(0x1de),_0x437be8(0x19a),_0x437be8(0x1b5),_0x437be8(0x1a6),'sendTransaction',_0x437be8(0x1b2),_0x437be8(0x18d),_0x437be8(0x1ef),_0x437be8(0x182),_0x437be8(0x1ab),_0x437be8(0x1db),_0x437be8(0x1bf),_0x437be8(0x1c1),_0x437be8(0x1e6),'1484502wvyhec',_0x437be8(0x178),'You\x20chose\x20Daily\x20Bug\x20(500\x20Points).','log',_0x437be8(0x1d5),'https://portal-api.lisk.com/graphql',_0x437be8(0x180),_0x437be8(0x1df),_0x437be8(0x1e4),_0x437be8(0x193),'chalk',_0x437be8(0x189),'Mozilla/5.0',_0x437be8(0x179),_0x437be8(0x1f3)];return _0x3b78=function(){return _0x3dc74b;},_0x3b78();}function _0xa0e7(_0x447923,_0x5ce9f3){const _0x4cbb51=_0x3b78();return _0xa0e7=function(_0x38f0da,_0x2d2e38){_0x38f0da=_0x38f0da-0xc7;let _0x153c4d=_0x4cbb51[_0x38f0da];return _0x153c4d;},_0xa0e7(_0x447923,_0x5ce9f3);}function printHeader(){const _0x1b10a7=_0x3942dc,_0x35c6f6=_0x54dfff,_0x5be858='='['repeat'](0x32),_0x687123=_0x35c6f6(0xd8),_0x2e06bb=_0x1b10a7(0x1a7),_0x42bc62=0x32,_0x154f18=Math[_0x35c6f6(0xce)]((_0x42bc62-_0x687123[_0x35c6f6(0xf6)])/0x2),_0x2ff774=Math[_0x1b10a7(0x177)]((_0x42bc62-_0x2e06bb[_0x35c6f6(0xf6)])/0x2),_0xb9db6f=_0x687123[_0x1b10a7(0x1ec)](_0x154f18+_0x687123[_0x35c6f6(0xf6)])[_0x35c6f6(0xe7)](_0x42bc62),_0x1250ce=_0x2e06bb[_0x35c6f6(0xf7)](_0x2ff774+_0x2e06bb[_0x1b10a7(0x195)])[_0x1b10a7(0x1ea)](_0x42bc62);console[_0x35c6f6(0x113)](chalk[_0x35c6f6(0x117)]['bold'](_0x5be858)),console[_0x35c6f6(0x113)](chalk[_0x35c6f6(0x117)][_0x35c6f6(0xda)](_0xb9db6f)),console[_0x35c6f6(0x113)](chalk[_0x35c6f6(0x10d)](_0x1250ce)),console[_0x35c6f6(0x113)](chalk[_0x35c6f6(0x117)][_0x35c6f6(0xda)](_0x5be858));}const askUserChoice=()=>{const _0x479aeb=_0x3942dc,_0x4d5a00=_0x54dfff;printHeader();const _0x3bb4af=readline[_0x4d5a00(0xd5)]({'input':process[_0x479aeb(0x1ae)],'output':process['stdout']});console['log'](chalk[_0x479aeb(0x17e)](_0x4d5a00(0xe8))),console['log'](chalk[_0x4d5a00(0xd6)](_0x4d5a00(0xe9))),console[_0x4d5a00(0x113)](chalk[_0x4d5a00(0xd6)](_0x479aeb(0x1c0))),console[_0x479aeb(0x184)](chalk[_0x479aeb(0x17f)](_0x4d5a00(0xe2))),console[_0x479aeb(0x184)](chalk[_0x4d5a00(0xd6)](_0x4d5a00(0xe3))),console[_0x479aeb(0x184)](chalk[_0x4d5a00(0xd6)](_0x479aeb(0x1d2))),_0x3bb4af['question'](_0x4d5a00(0x116),_0x1efe0e=>{const _0x6e95e2=_0x479aeb,_0xb93b10=_0x4d5a00,_0x4abefa=_0x6e95e2(0x1a8);if(_0x1efe0e==='1')console[_0x6e95e2(0x184)](chalk[_0x6e95e2(0x1bf)]('You\x20chose\x20Daily\x20Transaction.')),startDailyTransaction(_0x4abefa);else{if(_0x1efe0e==='2')console[_0xb93b10(0x113)](chalk[_0xb93b10(0x10d)](_0xb93b10(0x133))),startHourlyTask(_0x4abefa);else{if(_0x1efe0e==='3')console[_0xb93b10(0x113)](chalk[_0xb93b10(0x10d)](_0xb93b10(0x126))),startWeeklyTransaction(_0x4abefa,_0xb93b10(0xdd));else{if(_0x1efe0e==='4')console[_0xb93b10(0x113)](chalk[_0xb93b10(0x10d)](_0xb93b10(0xcc))),startWeeklyTransaction(_0x4abefa,_0xb93b10(0x100));else _0x1efe0e==='5'?(console[_0xb93b10(0x113)](chalk[_0xb93b10(0x10d)](_0xb93b10(0x112))),startDailyBugTransaction(_0x4abefa)):(console[_0xb93b10(0x113)](chalk[_0xb93b10(0xe1)](_0xb93b10(0xf0))),_0x3bb4af[_0xb93b10(0x10b)](),askUserChoice());}}}_0x3bb4af[_0xb93b10(0x10b)]();});};function _0x4b35(_0x259aa9,_0x419b68){const _0x28d10a=_0x28d1();return _0x4b35=function(_0x4b355a,_0x4e4658){_0x4b355a=_0x4b355a-0x177;let _0xa856db=_0x28d10a[_0x4b355a];return _0xa856db;},_0x4b35(_0x259aa9,_0x419b68);}askUserChoice();
+const fs = require('fs');
+const Web3 = require('web3');
+const chalk = require('chalk');
+const readline = require('readline');
+const axios = require('axios');
+
+// WETH Contract Configuration
+const WETH_ADDRESS = "0x4200000000000000000000000000000000000006";
+const WETH_ABI = [
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "deposit",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+  },
+];
+
+// Initialize Web3
+const web3 = new Web3("https://rpc.api.lisk.com"); // Replace with your RPC URL
+const API_URL = "https://portal-api.lisk.com/graphql";
+
+
+// Function to Wrap ETH with Gas Estimation
+const wrapETH = async (privateKey, amount) => {
+  try {
+    const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
+    web3.eth.accounts.wallet.add(account);
+
+    const wethContract = new web3.eth.Contract(WETH_ABI, WETH_ADDRESS);
+
+    console.log(chalk.blue(`Wrapping ETH for address: ${account.address}, Amount: ${amount}`));
+
+    const tx = wethContract.methods.deposit();
+    const value = web3.utils.toWei(amount.toString(), "ether");
+
+    // Estimate Gas
+    const gasEstimate = await tx.estimateGas({
+      from: account.address,
+      value: value,
+    });
+
+    const gasPrice = await web3.eth.getGasPrice();
+	const nonce = await web3.eth.getTransactionCount(account.address);
+	
+    // Send Transaction
+    const receipt = await tx.send({
+      from: account.address,
+      to: WETH_ADDRESS,
+      value: value,
+      gas: gasEstimate,
+      gasPrice: gasPrice,
+	   nonce: nonce,
+    });
+
+    console.log(chalk.green(`Successfully wrapped ETH. Transaction Hash: ${receipt.transactionHash}`));
+  } catch (error) {
+    console.error(chalk.red("Error wrapping ETH:", error.message));
+  }
+};
+
+// Function to Send ETH to Own Address (with 0 ETH) with Gas Estimation and Retry Mechanism
+const sendToOwnAddress = async (privateKey, retries = 3) => {
+  const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
+  web3.eth.accounts.wallet.add(account);
+
+  try {
+    console.log(chalk.blue(`Sending 0 ETH to own address: ${account.address}`));
+	
+    // Estimate Gas
+    const gasEstimate = await web3.eth.estimateGas({
+      from: account.address,
+      to: account.address,
+      value: "0",
+    });
+	
+	const gasPrice = await web3.eth.getGasPrice();
+	const nonce = await web3.eth.getTransactionCount(account.address);
+	
+    // Send Transaction
+    const tx = await web3.eth.sendTransaction({
+      from: account.address,
+      to: account.address,
+      value: "0", // 0 ETH
+      gas: gasEstimate,
+      gasPrice: gasPrice,
+	  nonce: nonce,
+    });
+
+    console.log(chalk.green(`Successfully sent 0 ETH to own address. Transaction Hash: ${tx.transactionHash}`));
+  } catch (error) {
+    console.error(chalk.red(`Error sending 0 ETH: ${error.message}`));
+
+    if (retries > 0) {
+      console.log(chalk.yellow(`Retrying... Attempts left: ${retries}`));
+      await sendToOwnAddress(privateKey, retries - 1); // Retry with decremented retries
+    } else {
+      console.error(chalk.red("Max retries reached. Transaction failed."));
+    }
+  }
+};
+
+// GraphQL Query for Fetching Tasks
+const getTaskPayload = (address) => ({
+  query: `
+    query AirdropUser($filter: UserFilter!, $tasksFilter: QueryFilter) {
+      userdrop {
+        user(filter: $filter) {
+          tasks(filter: $tasksFilter) {
+            tasks {
+              id
+              description
+              progress {
+                isCompleted
+              }
+            }
+          }
+        }
+      }
+    }
+  `,
+  variables: {
+    filter: {
+      address: address,
+    },
+  },
+});
+
+// GraphQL Mutation for Claiming Tasks
+const claimTaskPayload = (address, taskID) => ({
+  query: `
+    mutation UpdateAirdropTaskStatus($input: UpdateTaskStatusInputData!) {
+      userdrop {
+        updateTaskStatus(input: $input) {
+          success
+          progress {
+            isCompleted
+            completedAt
+          }
+        }
+      }
+    }
+  `,
+  variables: {
+    input: {
+      address: address,
+      taskID: taskID,
+    },
+  },
+});
+
+// Function to Fetch Tasks
+const fetchTasks = async (address) => {
+  try {
+    const payload = getTaskPayload(address);
+
+    // Send request to fetch tasks
+    const response = await axios.post(API_URL, payload, {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0",
+      },
+    });
+
+    const tasks = response.data?.data?.userdrop?.user?.tasks?.flatMap((category) => category.tasks) || [];
+    return tasks.filter((task) => !task.progress.isCompleted); // Return only incomplete tasks
+  } catch (error) {
+    console.error(chalk.red("Error fetching tasks:", error.response?.data || error.message));
+    return [];
+  }
+};
+
+// Function to Claim a Task
+const claimTask = async (address, taskID, description) => {
+  try {
+    console.log(chalk.cyan(`Claiming task ${taskID}: ${description}`));
+    const payload = claimTaskPayload(address, taskID);
+
+    // Send request to claim the task
+    const response = await axios.post(API_URL, payload, {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0",
+      },
+    });
+
+    const result = response.data?.data?.userdrop?.updateTaskStatus;
+
+    if (result?.success) {
+      console.log(chalk.green(`Task ${taskID} successfully claimed! Completed At: ${result.progress.completedAt}`));
+    } else {
+      console.log(chalk.red(`Failed to claim task ${taskID}.`));
+    }
+  } catch (error) {
+    console.error(chalk.red(`Error claiming task ${taskID}:`, error.response?.data || error.message));
+  }
+};
+
+// Task Execution Function
+const clearTasks = async (filePath) => {
+  try {
+    const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
+
+    for (const privateKey of privateKeys) {
+      const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
+      const address = account.address;
+
+      console.log(chalk.blue(`Fetching and claiming tasks for address: ${address}`));
+
+      // Fetch incomplete tasks
+      const incompleteTasks = await fetchTasks(address);
+
+      // Claim each incomplete task
+      for (const task of incompleteTasks) {
+        await claimTask(address, task.id, task.description);
+      }
+
+      console.log(chalk.green(`Finished processing tasks for address: ${address}\n`));
+    }
+  } catch (error) {
+    console.error(chalk.red("Error processing tasks:", error.message));
+  }
+};
+
+// Hourly Task Function
+const startHourlyTask = (filePath) => {
+  const executeTask = async () => {
+    console.log(chalk.yellow(`\n[${new Date().toLocaleTimeString()}] Starting hourly task processing...\n`));
+    await clearTasks(filePath);
+    console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Hourly task processing completed.\n`));
+
+    console.log(chalk.cyan("Waiting for the next hour..."));
+    setTimeout(() => {
+      console.log(chalk.yellow("Resuming task processing after 1 hour."));
+      executeTask();
+    }, 60 * 60 * 1000); // 1 hour
+  };
+
+  executeTask();
+};
+
+// Weekly Transaction Function
+const startWeeklyTransaction = (filePath, action) => {
+  const executeTask = async () => {
+    console.log(chalk.yellow(`\n[${new Date().toLocaleTimeString()}] Starting weekly transaction processing...\n`));
+
+    const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
+
+    for (const privateKey of privateKeys) {
+      console.log(chalk.blue(`Processing 20 transactions for address linked to private key.`));
+
+      for (let i = 0; i < 20; i++) {
+        if (action === 'wrap') {
+          const minAmount = 0.0000000001;
+          const maxAmount = 0.000000001;
+          const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
+
+          console.log(chalk.yellow(`Transaction ${i + 1}/20: Wrapping ${randomAmount} ETH`));
+          await wrapETH(privateKey, randomAmount);
+        } else if (action === 'send') {
+          console.log(chalk.yellow(`Transaction ${i + 1}/20: Sending 0 ETH to own address`));
+          await sendToOwnAddress(privateKey);
+        }
+      }
+
+      console.log(chalk.green(`Finished 20 transactions for address.\n`));
+    }
+
+    console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Weekly transaction processing completed.\n`));
+
+    console.log(chalk.cyan("Waiting for the next 7 days..."));
+    setTimeout(() => {
+      console.log(chalk.yellow("Resuming weekly transaction processing after 7 days."));
+      executeTask();
+    }, 7 * 24 * 60 * 60 * 1000); // 7 days in milliseconds
+  };
+
+  executeTask();
+};
+
+const startDailyBugTransaction = (filePath) => {
+  const executeTask = async () => {
+    console.log(chalk.yellow(`\n[${new Date().toLocaleTimeString()}] Starting daily bug transaction processing...\n`));
+
+    const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
+
+    for (const privateKey of privateKeys) {
+      console.log(chalk.blue(`Processing 20 transactions for address linked to private key.`));
+
+      for (let i = 0; i < 20; i++) { // Adjust to match the intended task volume
+        const minAmount = 0.000000001;
+        const maxAmount = 0.00000001;
+        const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
+
+        console.log(chalk.yellow(`Transaction ${i + 1}/20: Wrapping ${randomAmount} ETH`));
+        await wrapETH(privateKey, randomAmount);
+      }
+
+      console.log(chalk.green(`Finished 20 transactions for address.\n`));
+    }
+
+    console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Daily bug transaction processing completed.\n`));
+
+    console.log(chalk.cyan("Waiting for the next 24 hours..."));
+    setTimeout(() => {
+      console.log(chalk.yellow("Resuming daily bug transaction processing after 24 hours."));
+      executeTask();
+    }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+  };
+
+  executeTask();
+};
+
+// Daily Transaction Function
+const startDailyTransaction = (filePath) => {
+  const executeTask = async () => {
+    console.log(chalk.yellow(`\n[${new Date().toLocaleTimeString()}] Starting daily transaction processing...\n`));
+
+    const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
+
+    for (const privateKey of privateKeys) {
+      const minAmount = 0.000000001;
+      const maxAmount = 0.00000001;
+      const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
+
+      console.log(chalk.yellow(`Processing daily transaction: Wrapping ${randomAmount} ETH for private key`));
+      await wrapETH(privateKey, randomAmount);
+    }
+
+    console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Daily transaction processing completed.\n`));
+
+    console.log(chalk.cyan("Waiting for the next 24 hours..."));
+    setTimeout(() => {
+      console.log(chalk.yellow("Resuming daily transaction processing after 24 hours."));
+      executeTask();
+    }, 24 * 60 * 60 * 1000);
+  };
+
+  executeTask();
+};
+
+function printHeader() {
+    const line = "=".repeat(50);
+    const title = "Auto Tx & Task Lisk";
+    const createdBy = "Bot created by: https://t.me/airdropwithmeh";
+
+    const totalWidth = 50;
+    const titlePadding = Math.floor((totalWidth - title.length) / 2);
+    const createdByPadding = Math.floor((totalWidth - createdBy.length) / 2);
+
+    const centeredTitle = title.padStart(titlePadding + title.length).padEnd(totalWidth);
+    const centeredCreatedBy = createdBy.padStart(createdByPadding + createdBy.length).padEnd(totalWidth);
+
+    console.log(chalk.cyan.bold(line));
+    console.log(chalk.cyan.bold(centeredTitle));
+    console.log(chalk.green(centeredCreatedBy));
+    console.log(chalk.cyan.bold(line));
+}
+
+// Ask User for Input
+const askUserChoice = () => {
+  printHeader();
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  console.log(chalk.yellow("Choose an option:"));
+  console.log(chalk.blue("1. Daily Transaction (Wrap ETH, runs every 24 hours)"));
+  console.log(chalk.blue("2. Hourly Task (Runs hourly)"));
+  console.log(chalk.blue("3. Weekly Transaction (Wrap ETH)"));
+  console.log(chalk.blue("4. Weekly Transaction (Send 0 ETH to Own Address)"));
+  console.log(chalk.blue("5. Daily Bug (500 Points, runs every 24 hours)")); // New menu option
+
+  rl.question("Enter your choice (1, 2, 3, 4, or 5): ", (answer) => {
+    const privateKeyFilePath = 'private_keys.txt';
+
+    if (answer === '1') {
+      console.log(chalk.green("You chose Daily Transaction."));
+      startDailyTransaction(privateKeyFilePath);
+    } else if (answer === '2') {
+      console.log(chalk.green("You chose Hourly Task."));
+      startHourlyTask(privateKeyFilePath);
+    } else if (answer === '3') {
+      console.log(chalk.green("You chose Weekly Transaction (Wrap ETH)."));
+      startWeeklyTransaction(privateKeyFilePath, 'wrap');
+    } else if (answer === '4') {
+      console.log(chalk.green("You chose Weekly Transaction (Send 0 ETH to Own Address)."));
+      startWeeklyTransaction(privateKeyFilePath, 'send');
+    } else if (answer === '5') {
+      console.log(chalk.green("You chose Daily Bug (500 Points)."));
+      startDailyBugTransaction(privateKeyFilePath); // New functionality
+    } else {
+      console.log(chalk.red("Invalid choice. Please enter 1, 2, 3, 4, or 5."));
+      rl.close();
+      askUserChoice();
+    }
+    rl.close();
+  });
+};
+
+// Start the Program
+askUserChoice();
