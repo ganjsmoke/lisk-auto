@@ -23,8 +23,8 @@ const web3 = new Web3("https://rpc.api.lisk.com"); // Replace with your RPC URL
 const API_URL = "https://portal-api.lisk.com/graphql";
 
 
-// Function to Wrap ETH with Gas Estimation
-const wrapETH = async (privateKey, amount) => {
+// Function to Wrap ETH with Gas Estimation, Nonce, and Retry Delay
+const wrapETH = async (privateKey, amount, retries = 3, delay = 5000) => { // delay in milliseconds (default 5s)
   try {
     const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
     web3.eth.accounts.wallet.add(account);
@@ -43,50 +43,63 @@ const wrapETH = async (privateKey, amount) => {
     });
 
     const gasPrice = await web3.eth.getGasPrice();
-	const nonce = await web3.eth.getTransactionCount(account.address);
-	
-    // Send Transaction
+
+    // Fetch the current nonce for the address
+    const nonce = await web3.eth.getTransactionCount(account.address);
+
+    // Send Transaction with nonce
     const receipt = await tx.send({
       from: account.address,
       to: WETH_ADDRESS,
       value: value,
       gas: gasEstimate,
       gasPrice: gasPrice,
-	   nonce: nonce,
+      nonce: nonce, // Add nonce here
     });
 
     console.log(chalk.green(`Successfully wrapped ETH. Transaction Hash: ${receipt.transactionHash}`));
   } catch (error) {
     console.error(chalk.red("Error wrapping ETH:", error.message));
+
+    if (retries > 0) {
+      console.log(chalk.yellow(`Retrying in ${delay / 1000} seconds... Attempts left: ${retries}`));
+      await new Promise(resolve => setTimeout(resolve, delay)); // Delay before retrying
+      await wrapETH(privateKey, amount, retries - 1, delay); // Retry with decremented retries
+    } else {
+      console.error(chalk.red("Max retries reached. Transaction failed."));
+    }
   }
 };
 
-// Function to Send ETH to Own Address (with 0 ETH) with Gas Estimation and Retry Mechanism
-const sendToOwnAddress = async (privateKey, retries = 3) => {
+
+// Function to Send ETH to Own Address (with 0 ETH) with Gas Estimation, Retry Mechanism, Nonce, and Retry Delay
+const sendToOwnAddress = async (privateKey, retries = 3, delay = 60000) => { // delay in milliseconds (default 5s)
   const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
   web3.eth.accounts.wallet.add(account);
 
   try {
     console.log(chalk.blue(`Sending 0 ETH to own address: ${account.address}`));
-	
+    
     // Estimate Gas
     const gasEstimate = await web3.eth.estimateGas({
       from: account.address,
       to: account.address,
       value: "0",
     });
-	
-	const gasPrice = await web3.eth.getGasPrice();
-	const nonce = await web3.eth.getTransactionCount(account.address);
-	
-    // Send Transaction
+    
+    const gasPrice = await web3.eth.getGasPrice();
+    
+    // Fetch the current nonce for the address
+    const nonce = await web3.eth.getTransactionCount(account.address);
+
+    // Send Transaction with nonce
     const tx = await web3.eth.sendTransaction({
       from: account.address,
       to: account.address,
       value: "0", // 0 ETH
       gas: gasEstimate,
       gasPrice: gasPrice,
-	  nonce: nonce,
+      nonce: nonce, // Add nonce here
     });
 
     console.log(chalk.green(`Successfully sent 0 ETH to own address. Transaction Hash: ${tx.transactionHash}`));
@@ -94,13 +107,15 @@ const sendToOwnAddress = async (privateKey, retries = 3) => {
     console.error(chalk.red(`Error sending 0 ETH: ${error.message}`));
 
     if (retries > 0) {
-      console.log(chalk.yellow(`Retrying... Attempts left: ${retries}`));
-      await sendToOwnAddress(privateKey, retries - 1); // Retry with decremented retries
+      console.log(chalk.yellow(`Retrying in ${delay / 1000} seconds... Attempts left: ${retries}`));
+      await new Promise(resolve => setTimeout(resolve, delay)); // Delay before retrying
+      await sendToOwnAddress(privateKey, retries - 1, delay); // Retry with decremented retries
     } else {
       console.error(chalk.red("Max retries reached. Transaction failed."));
     }
   }
 };
+
 
 // GraphQL Query for Fetching Tasks
 const getTaskPayload = (address) => ({
