@@ -24,7 +24,7 @@ const API_URL = "https://portal-api.lisk.com/graphql";
 
 
 // Function to Wrap ETH with Gas Estimation, Nonce, and Retry Delay
-const wrapETH = async (privateKey, amount, retries = 3, delay = 5000) => { // delay in milliseconds (default 5s)
+const wrapETH = async (privateKey, amount, retries = 3, delay = 60000) => { // delay in milliseconds (default 5s)
   try {
     const account = web3.eth.accounts.privateKeyToAccount(privateKey.trim());
     web3.eth.accounts.wallet.add(account);
@@ -48,7 +48,7 @@ const wrapETH = async (privateKey, amount, retries = 3, delay = 5000) => { // de
     const nonce = await web3.eth.getTransactionCount(account.address);
 
     // Send Transaction with nonce
-    const receipt = await tx.send({
+    const tx2 = await tx.send({
       from: account.address,
       to: WETH_ADDRESS,
       value: value,
@@ -57,7 +57,9 @@ const wrapETH = async (privateKey, amount, retries = 3, delay = 5000) => { // de
       nonce: nonce, // Add nonce here
     });
 
-    console.log(chalk.green(`Successfully wrapped ETH. Transaction Hash: ${receipt.transactionHash}`));
+
+    console.log(chalk.green(`Successfully wrapped ETH. Transaction Hash: ${tx2.transactionHash}`));
+    await new Promise(resolve => setTimeout(resolve, 5000)); // Delay before checking again
   } catch (error) {
     console.error(chalk.red("Error wrapping ETH:", error.message));
 
@@ -102,7 +104,11 @@ const sendToOwnAddress = async (privateKey, retries = 3, delay = 60000) => { // 
       nonce: nonce, // Add nonce here
     });
 
+    console.log(chalk.yellow(`Transaction sent. Waiting for receipt...`));
+
+
     console.log(chalk.green(`Successfully sent 0 ETH to own address. Transaction Hash: ${tx.transactionHash}`));
+    await new Promise(resolve => setTimeout(resolve, 5000)); // Delay before checking again
   } catch (error) {
     console.error(chalk.red(`Error sending 0 ETH: ${error.message}`));
 
@@ -266,18 +272,18 @@ const startWeeklyTransaction = (filePath, action) => {
     const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
 
     for (const privateKey of privateKeys) {
-      console.log(chalk.blue(`Processing 20 transactions for address linked to private key.`));
+      console.log(chalk.blue(`Processing 100 transactions for address linked to private key.`));
 
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 100; i++) {
         if (action === 'wrap') {
           const minAmount = 0.0000000001;
           const maxAmount = 0.000000001;
           const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
 
-          console.log(chalk.yellow(`Transaction ${i + 1}/20: Wrapping ${randomAmount} ETH`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/100: Wrapping ${randomAmount} ETH`));
           await wrapETH(privateKey, randomAmount);
         } else if (action === 'send') {
-          console.log(chalk.yellow(`Transaction ${i + 1}/20: Sending 0 ETH to own address`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/100: Sending 0 ETH to own address`));
           await sendToOwnAddress(privateKey);
         }
       }
