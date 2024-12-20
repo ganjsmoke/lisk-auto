@@ -272,65 +272,32 @@ const startWeeklyTransaction = (filePath, action) => {
     const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
 
     for (const privateKey of privateKeys) {
-      console.log(chalk.blue(`Processing 100 transactions for address linked to private key.`));
+      console.log(chalk.blue(`Processing 80 transactions for address linked to private key.`));
 
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 80; i++) {
         if (action === 'wrap') {
           const minAmount = 0.0000000001;
           const maxAmount = 0.000000001;
           const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
 
-          console.log(chalk.yellow(`Transaction ${i + 1}/100: Wrapping ${randomAmount} ETH`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/80: Wrapping ${randomAmount} ETH`));
           await wrapETH(privateKey, randomAmount);
         } else if (action === 'send') {
-          console.log(chalk.yellow(`Transaction ${i + 1}/100: Sending 0 ETH to own address`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/80: Sending 0 ETH to own address`));
           await sendToOwnAddress(privateKey);
         }
       }
 
-      console.log(chalk.green(`Finished 20 transactions for address.\n`));
+      console.log(chalk.green(`Finished 80 transactions for address.\n`));
     }
 
     console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Weekly transaction processing completed.\n`));
 
-    console.log(chalk.cyan("Waiting for the next 7 days..."));
+    console.log(chalk.cyan("Waiting for the next 1 days..."));
     setTimeout(() => {
-      console.log(chalk.yellow("Resuming weekly transaction processing after 7 days."));
+      console.log(chalk.yellow("Resuming daily transaction..."));
       executeTask();
-    }, 7 * 24 * 60 * 60 * 1000); // 7 days in milliseconds
-  };
-
-  executeTask();
-};
-
-const startDailyBugTransaction = (filePath) => {
-  const executeTask = async () => {
-    console.log(chalk.yellow(`\n[${new Date().toLocaleTimeString()}] Starting daily bug transaction processing...\n`));
-
-    const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
-
-    for (const privateKey of privateKeys) {
-      console.log(chalk.blue(`Processing 20 transactions for address linked to private key.`));
-
-      for (let i = 0; i < 20; i++) { // Adjust to match the intended task volume
-        const minAmount = 0.000000001;
-        const maxAmount = 0.00000001;
-        const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
-
-        console.log(chalk.yellow(`Transaction ${i + 1}/20: Wrapping ${randomAmount} ETH`));
-        await wrapETH(privateKey, randomAmount);
-      }
-
-      console.log(chalk.green(`Finished 20 transactions for address.\n`));
-    }
-
-    console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Daily bug transaction processing completed.\n`));
-
-    console.log(chalk.cyan("Waiting for the next 24 hours..."));
-    setTimeout(() => {
-      console.log(chalk.yellow("Resuming daily bug transaction processing after 24 hours."));
-      executeTask();
-    }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+    }, 1 * 24 * 60 * 60 * 1000); // 7 days in milliseconds
   };
 
   executeTask();
@@ -393,11 +360,10 @@ const askUserChoice = () => {
   console.log(chalk.yellow("Choose an option:"));
   console.log(chalk.blue("1. Daily Transaction (Wrap ETH, runs every 24 hours)"));
   console.log(chalk.blue("2. Hourly Task (Runs hourly)"));
-  console.log(chalk.blue("3. Weekly Transaction (Wrap ETH)"));
+  console.log(chalk.blue("3. Weekly Transaction (Wrap ETH)(80tx/day)"));
   console.log(chalk.blue("4. Weekly Transaction (Send 0 ETH to Own Address)"));
-  console.log(chalk.blue("5. Daily Bug (500 Points, runs every 24 hours)")); // New menu option
 
-  rl.question("Enter your choice (1, 2, 3, 4, or 5): ", (answer) => {
+  rl.question("Enter your choice (1, 2, 3 or 4): ", (answer) => {
     const privateKeyFilePath = 'private_keys.txt';
 
     if (answer === '1') {
@@ -412,9 +378,6 @@ const askUserChoice = () => {
     } else if (answer === '4') {
       console.log(chalk.green("You chose Weekly Transaction (Send 0 ETH to Own Address)."));
       startWeeklyTransaction(privateKeyFilePath, 'send');
-    } else if (answer === '5') {
-      console.log(chalk.green("You chose Daily Bug (500 Points)."));
-      startDailyBugTransaction(privateKeyFilePath); // New functionality
     } else {
       console.log(chalk.red("Invalid choice. Please enter 1, 2, 3, 4, or 5."));
       rl.close();
