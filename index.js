@@ -272,23 +272,23 @@ const startWeeklyTransaction = (filePath, action) => {
     const privateKeys = fs.readFileSync(filePath, 'utf-8').split('\n').filter(Boolean);
 
     for (const privateKey of privateKeys) {
-      console.log(chalk.blue(`Processing 80 transactions for address linked to private key.`));
+      console.log(chalk.blue(`Processing 110 transactions for address linked to private key.`));
 
-      for (let i = 0; i < 80; i++) {
+      for (let i = 0; i < 110; i++) {
         if (action === 'wrap') {
           const minAmount = 0.0000000001;
           const maxAmount = 0.000000001;
           const randomAmount = (Math.random() * (maxAmount - minAmount) + minAmount).toFixed(9);
 
-          console.log(chalk.yellow(`Transaction ${i + 1}/80: Wrapping ${randomAmount} ETH`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/110: Wrapping ${randomAmount} ETH`));
           await wrapETH(privateKey, randomAmount);
         } else if (action === 'send') {
-          console.log(chalk.yellow(`Transaction ${i + 1}/80: Sending 0 ETH to own address`));
+          console.log(chalk.yellow(`Transaction ${i + 1}/110: Sending 0 ETH to own address`));
           await sendToOwnAddress(privateKey);
         }
       }
 
-      console.log(chalk.green(`Finished 80 transactions for address.\n`));
+      console.log(chalk.green(`Finished 110 transactions for address.\n`));
     }
 
     console.log(chalk.green(`\n[${new Date().toLocaleTimeString()}] Weekly transaction processing completed.\n`));
@@ -360,7 +360,7 @@ const askUserChoice = () => {
   console.log(chalk.yellow("Choose an option:"));
   console.log(chalk.blue("1. Daily Transaction (Wrap ETH, runs every 24 hours)"));
   console.log(chalk.blue("2. Hourly Task (Runs hourly)"));
-  console.log(chalk.blue("3. Weekly Transaction (Wrap ETH)(80tx/day)"));
+  console.log(chalk.blue("3. Weekly Transaction (Wrap ETH)(110tx/day)"));
   console.log(chalk.blue("4. Weekly Transaction (Send 0 ETH to Own Address)"));
 
   rl.question("Enter your choice (1, 2, 3 or 4): ", (answer) => {
